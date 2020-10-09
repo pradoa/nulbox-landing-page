@@ -1,0 +1,45 @@
+body {
+    background-color: #fff;
+}
+
+.mail-input {
+    padding: 15px 30px;
+    display: flex;
+
+    input {
+        border-color: _palette(fg);
+        background-color: _palette(border-bg);
+		font-family: 'Source Sans Pro', sans-serif;
+		text-transform: uppercase;
+    }
+
+    button {
+        min-width: auto;
+        margin-left: 8px;
+        background-color: _palette(fg);
+        color: _palette(border-bg);
+    }
+}
+
+#footer {
+    h2 {
+        color: _palette(border-bg);
+    }
+}
+
+
+@include breakpoint('<=mobile') {
+    .mail-input {
+        padding: 15px 0;
+        display: block;
+
+        input {
+            margin-bottom: 8px;
+        }
+
+        button {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}
